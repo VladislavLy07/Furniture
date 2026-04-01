@@ -24,6 +24,7 @@ products.forEach((product) => {
       <button class="details-btn" type="button">Подробнее</button>
       <button class="add-to-cart-btn" type="button">Добавить в корзину</button>
     </div>
+    <button class="details-btn" type="button">Подробнее</button>
   `;
 
   productGrid.appendChild(card);
