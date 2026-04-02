@@ -3,12 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Мебель — Премиальный магазин мебели</title>
     <title>Мебель — Магазин мебели</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header class="site-header">
       <div class="container header-inner">
+        <a class="logo" href="#home">Мебель</a>
+
+        <nav aria-label="Основная навигация">
         <div class="logo">Мебель</div>
         <nav>
           <ul class="menu">
@@ -17,11 +21,70 @@
             <li><a href="#contacts">Контакты</a></li>
           </ul>
         </nav>
+
         <div class="cart-status" id="cartStatus">Корзина: <span id="cartCount">0</span></div>
       </div>
     </header>
 
     <main>
+      <section id="home" class="hero">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <p class="hero-label">Премиальная коллекция 2026</p>
+            <h1>Магазин мебели</h1>
+            <p class="hero-subtitle">Стиль и комфорт для вашего дома — от уютных диванов до функциональных систем хранения.</p>
+            <a class="hero-cta" href="#catalog">Выбрать мебель</a>
+          </div>
+          <div class="hero-visual" aria-hidden="true">
+            <div class="visual-card visual-card-top">Натуральные материалы</div>
+            <div class="visual-card visual-card-bottom">Современные формы</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="catalog" class="catalog container">
+        <div class="section-head">
+          <h2>Каталог</h2>
+          <p>Подберите мебель, которая делает интерьер дорогим и гармоничным.</p>
+        </div>
+        <div class="product-grid" id="productGrid"></div>
+      </section>
+
+      <section class="benefits container" aria-label="Преимущества">
+        <div class="section-head">
+          <h2>Почему выбирают нас</h2>
+        </div>
+        <div class="benefits-grid">
+          <article class="benefit-item">
+            <h3>Качественные материалы</h3>
+            <p>Используем долговечные ткани, массив и надежную фурнитуру.</p>
+          </article>
+          <article class="benefit-item">
+            <h3>Современный дизайн</h3>
+            <p>Коллекции в актуальной эстетике: минимализм, сканди, мягкий лофт.</p>
+          </article>
+          <article class="benefit-item">
+            <h3>Быстрая доставка</h3>
+            <p>Оперативно доставляем и аккуратно поднимаем мебель до квартиры.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contacts" class="contacts container">
+        <h2>Свяжитесь с нами</h2>
+        <div class="contacts-card">
+          <p>Телефон: <a href="tel:+79991234567">+7 (999) 123-45-67</a></p>
+          <p>Email: <a href="mailto:info@mebel-store.ru">info@mebel-store.ru</a></p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© 2026 Мебель. Уютные решения для вашего дома.</p>
+      </div>
+    </footer>
+
       <section id="home" class="hero container">
         <h1>Магазин мебели</h1>
         <p>Стиль и комфорт для вашего дома</p>
