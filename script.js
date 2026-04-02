@@ -41,3 +41,32 @@ if (productGrid && cartCountElement) {
     cartCountElement.textContent = String(cartCount);
   });
 }
+products.forEach((product) => {
+  const card = document.createElement('article');
+  card.className = 'product-card';
+
+  card.innerHTML = `
+    <div>
+      <h3>${product.name}</h3>
+      <p class="price">Цена: ${product.price}</p>
+    </div>
+    <div class="product-actions">
+      <button class="details-btn" type="button">Подробнее</button>
+      <button class="add-to-cart-btn" type="button">Добавить в корзину</button>
+    </div>
+    <button class="details-btn" type="button">Подробнее</button>
+  `;
+
+  productGrid.appendChild(card);
+});
+
+productGrid.addEventListener('click', (event) => {
+  const addButton = event.target.closest('.add-to-cart-btn');
+
+  if (!addButton) {
+    return;
+  }
+
+  cartCount += 1;
+  cartCountElement.textContent = String(cartCount);
+});

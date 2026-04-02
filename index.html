@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Мебель — Премиальный магазин мебели</title>
+    <title>Мебель — Магазин мебели</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -12,6 +13,8 @@
         <a class="logo" href="#home">Мебель</a>
 
         <nav aria-label="Основная навигация">
+        <div class="logo">Мебель</div>
+        <nav>
           <ul class="menu">
             <li><a href="#home">Главная</a></li>
             <li><a href="#catalog">Каталог</a></li>
@@ -81,6 +84,23 @@
         <p>© 2026 Мебель. Уютные решения для вашего дома.</p>
       </div>
     </footer>
+
+      <section id="home" class="hero container">
+        <h1>Магазин мебели</h1>
+        <p>Стиль и комфорт для вашего дома</p>
+      </section>
+
+      <section id="catalog" class="catalog container">
+        <h2>Каталог</h2>
+        <div class="product-grid" id="productGrid"></div>
+      </section>
+
+      <section id="contacts" class="contacts container">
+        <h2>Свяжитесь с нами</h2>
+        <p>Телефон: <a href="tel:+79991234567">+7 (999) 123-45-67</a></p>
+        <p>Email: <a href="mailto:info@mebel-store.ru">info@mebel-store.ru</a></p>
+      </section>
+    </main>
 
     <script src="script.js"></script>
   </body>
