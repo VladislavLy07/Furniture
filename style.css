@@ -45,6 +45,10 @@ body {
   font-weight: 700;
 }
 
+.cart-status {
+  font-weight: 600;
+}
+
 .menu {
   display: flex;
   gap: 1rem;
@@ -127,6 +131,26 @@ body {
 
 .details-btn:hover {
   background: var(--accent-hover);
+}
+
+.product-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.add-to-cart-btn {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.6rem 0.9rem;
+  font-size: 0.95rem;
+  background: #fff;
+  color: var(--text);
+  cursor: pointer;
+}
+
+.add-to-cart-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
 }
 
 .contacts {
